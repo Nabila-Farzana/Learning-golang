@@ -1,0 +1,13 @@
+For memory management two methods can be used :
+* new() : 
+    1. Allocate memory but not INIT
+    2. You will get a memory address
+    3. Zeroed storage (initially no value)
+
+* make():
+    1. Allocate memory and INIT
+    2. You will get a memory address
+    3. Non-zeroed storage (initially can put value)
+
+# Garbage collection can be happened automatically. Anything out of scope or nil can be garbage collected.
+The GOGC variable sets the initial garbage collection target percentage. A collection is triggered when the ratio of freshly allocated data to live data remaining after the previous collection reaches this percentage. The default is GOGC=100. Setting GOGC=off disables the garbage collector entirely. The runtime/debug package's SetGCPercent function allows changing this percentage at run time. See https://golang.org/pkg/runtime/debug/#SetGCPercent.

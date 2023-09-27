@@ -1,0 +1,48 @@
+'go env'  command shows the environment variables.
+This is the environment variables for my go project :
+
+GO111MODULE=""
+GOARCH="amd64"
+GOBIN=""
+GOCACHE="/home/bs142/.cache/go-build"
+GOENV="/home/bs142/.config/go/env"
+GOEXE=""
+GOEXPERIMENT=""
+GOFLAGS=""
+GOHOSTARCH="amd64"
+GOHOSTOS="linux"
+GOINSECURE=""
+GOMODCACHE="/home/bs142/go/pkg/mod"
+GONOPROXY=""
+GONOSUMDB=""
+GOOS="linux"
+GOPATH="/home/bs142/go"
+GOPRIVATE=""
+GOPROXY="https://proxy.golang.org,direct"
+GOROOT="/usr/local/go"
+GOSUMDB="sum.golang.org"
+GOTMPDIR=""
+GOTOOLDIR="/usr/local/go/pkg/tool/linux_amd64"
+GOVCS=""
+GOVERSION="go1.18.3"
+GCCGO="gccgo"
+GOAMD64="v1"
+AR="ar"
+CC="gcc"
+CXX="g++"
+CGO_ENABLED="1"
+GOMOD="/dev/null"
+GOWORK=""
+CGO_CFLAGS="-g -O2"
+CGO_CPPFLAGS=""
+CGO_CXXFLAGS="-g -O2"
+CGO_FFLAGS="-g -O2"
+CGO_LDFLAGS="-g -O2"
+PKG_CONFIG="pkg-config"
+GOGCCFLAGS="-fPIC -m64 -pthread -fmessage-length=0 -fdebug-prefix-map=/tmp/go-build3939889697=/tmp/go-build -gno-record-gcc-switches"
+
+
+We can build project by defining the OS by this command: 'GOOS="windows" go build' 
+we can change the value for GOOS='linux' or GOOS='darwin'
+
+example: if we build project with GOOS="windows" an .exe build file will be created 
